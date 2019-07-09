@@ -11,7 +11,7 @@ Class Activity 7/9/19
 
 * *None*
 
-## Instructions
+## Instructions (part 1)
 
 * For the next 20 minutes, focus all your efforts on creating the application layout for your site.
 
@@ -28,3 +28,11 @@ Class Activity 7/9/19
   * Continue refining the design! Take things to the next level. Make this application portfolio-grade!
 
   * Begin reading about `push({})` and `.on("child_added")` in the Firebase documentation.
+
+## Instructions (part 2)
+
+* Using your newfound knowledge of the `.push({})` method, create the code necessary to push employee data into the database upon clicking the `submit` button on your webpage.
+
+* **NOTE:** Don't worry about getting the data to display in the HTML just yet. Just focus on getting data pushed to the database.
+
+* If you finish early, begin reading about `.on("child_added")` in the Firebase documentation and/or the MomentJS library.
