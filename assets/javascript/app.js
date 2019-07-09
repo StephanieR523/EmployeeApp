@@ -16,10 +16,10 @@ $("#submit").on("click", function(event) {
     console.log(end-year);
 
     // Replaces the content in the "recent-member" div with the new info
-    $("#search-term").text(search-term);
-    $("#role").text(role);
-    $("#start-year").text(start-year);
-    $("#end-year").text(end-year);
+    $("#search-term-display").text(search-term);
+    $("#role-display").text(role);
+    $("#start-year-display").text(start-year);
+    $("#end-year-display").text(end-year);
 
     // Clear sessionStorage
     sessionStorage.clear();
@@ -34,5 +34,5 @@ $("#submit").on("click", function(event) {
   // By default display the content from sessionStorage
   $("#search-term-display").text(sessionStorage.getItem("search-term"));
   $("#role-display").text(sessionStorage.getItem("role"));
-  $("#start-year").text(sessionStorage.getItem("start-year"));
-  $("#end-year").text(sessionStorage.getItem("end-year"));
+  $("#start-year-display").text(sessionStorage.getItem("start-year"));
+  $("#end-year-display").text(sessionStorage.getItem("end-year"));
