@@ -4,10 +4,10 @@ $("#submit").on("click", function(event) {
     event.preventDefault();
 
     // Capture user inputs and store them into variables
-    var search-term = $("#search-term").val().trim();
+    var search = $("#search-term").val().trim();
     var role = $("#role").val().trim();
-    var start-year = $("#start-year-input").val().trim();
-    var end-year = $("#end-year-input").val().trim();
+    var start = $("#start-year-input").val().trim();
+    var end = $("#end-year-input").val().trim();
 
     // Console log each of the user inputs to confirm we are receiving them
     console.log(search-term);
