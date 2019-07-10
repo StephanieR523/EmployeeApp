@@ -4,6 +4,7 @@ $("#submit").on("click", function(event) {
     event.preventDefault();
 
     // Capture user inputs and store them into variables
+
     var name = $("#employee-name").val().trim();
     var role = $("#role").val().trim();
     var start = $("#start-year").val().trim();
@@ -21,10 +22,12 @@ $("#submit").on("click", function(event) {
     $("#start-year-display").text(start);
     $("#end-year-display").text(end);
 
+
     // Clear sessionStorage
     sessionStorage.clear();
 
     // Store all content into sessionStorage
+
     sessionStorage.setItem("employee-name", name);
     sessionStorage.setItem("role", role);
     sessionStorage.setItem("start-year", start);
