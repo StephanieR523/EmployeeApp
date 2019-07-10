@@ -26,7 +26,7 @@
   </style>
 </head>
 
-<body>
+<body> 
 
   <!-- Main Bootstrap Search -->
   <div class="container">
@@ -57,7 +57,7 @@
               <!-- Here we create the text box for capturing the search term-->
               <div class="form-group">
                 <label for="search">Employee Name</label>
-                <input type="text" class="form-control" id="search-term">
+                <input type="text" class="form-control" id="employee-name">
               </div>
 
               <!-- Here we capture the number of records that the user wants to retrieve  -->
@@ -104,7 +104,7 @@
               <table class="table">
                 <thead>
                   <tr>
-                    <th scope="search-term">Name</th>
+                    <th scope="employee-name">Name</th>
                     <th scope="role">Role</th>
                     <th scope="start-year">Start Date:</th>
                     <th scope="end-year">Monthly Rate:</th>
@@ -150,12 +150,16 @@
 
   </div>
 
+  <!-- firebase link -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
   <!-- jQuery JS -->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <!-- moment JS -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js"></script> -->
   <!-- Code to the JavaScript File -->
-  <script src="/assets/javascript/firebaseconfig.js"></script>
-  <script src="/assets/javascript/app.js"></script>
+  <script src="./assets/javascript/firebaseconfig.js"></script>
+  <script src="./assets/javascript/app.js"></script>
 </body>
 
 </html>
