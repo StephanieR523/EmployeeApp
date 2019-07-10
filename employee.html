@@ -16,6 +16,10 @@
       word-break: break-all;
     }
 
+    .card-header {
+      display: grid;
+      }
+
     .articleHeadline {
       line-height: 1.5;
     }
@@ -28,7 +32,7 @@
   <div class="container">
 
     <!-- Jumbotron for Title -->
-    <div class="jumbotron" style="background-color: #20315A ; color: white;">
+    <div class="jumbotron" style="background-color: rgb(16, 25, 46) ; color: white;">
       <h1 class="text-center">
         <strong>
           <i class="fa fa-newspaper-o"></i> Employee Data Management</strong>
@@ -53,7 +57,7 @@
               <!-- Here we create the text box for capturing the search term-->
               <div class="form-group">
                 <label for="search">Employee Name</label>
-                <input type="text" class="form-control" id="search-term">
+                <input type="text" class="form-control" id="employee-name">
               </div>
 
               <!-- Here we capture the number of records that the user wants to retrieve  -->
@@ -77,7 +81,7 @@
               <!-- Here we have our final submit button -->
               <button type="submit" class="btn btn-default" id="submit">
                 <i class="fa fa-search"></i> Submit</button>
-              
+
             </form>
           </div>
         </div>
@@ -96,37 +100,66 @@
           <div class="card-header">
             <strong>
               <i class="fa fa-table"></i> Current Employees</strong>
+            <div class="card-body" id="recent-member">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th id="employee-name-display" scope="employee-name">Name</th>
+                    <th id="role-display" scope="role">Role</th>
+                    <th id="start-year-display" scope="start-year">Start Date:</th>
+                    <th id="end-year-display" scope="end-year">Monthly Rate:</th>
+                  </tr>
+                </thead>
+              </table>  
+              
+              
+              
+             
+
+            </div>
           </div>
 
-          <!-- This main card will hold each of the resulting articles -->
-          <div class="card-body" id="article-section">
-          </div>
+
+
+
+
+
+
+        </div>
+
+        <!-- This main card will hold each of the resulting articles -->
+        <div class="card-body" id="article-section">
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer Region -->
-    <div class="row">
-      <div class="col-sm-12">
+  <!-- Footer Region -->
+  <div class="row">
+    <div class="col-sm-12">
 
-        <!-- Line Break followed by closing -->
-        <hr>
-        <h5 class="text-center">
-          
-          </small>
-        </h5>
+      <!-- Line Break followed by closing -->
+      <hr>
+      <h5 class="text-center">
 
-      </div>
+        </small>
+      </h5>
+
     </div>
+  </div>
 
   </div>
 
+  <!-- firebase link -->
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
   <!-- jQuery JS -->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <!-- moment JS -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js"></script> -->
   <!-- Code to the JavaScript File -->
-  <script src="/assets/javascript/firebaseconfig.js"></script>
-  <script src="/assets/javascript/app.js"></script>
+  <script src="./assets/javascript/firebaseconfig.js"></script>
+  <script src="./assets/javascript/app.js"></script>
 </body>
 
 </html>
