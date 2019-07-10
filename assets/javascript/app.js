@@ -25,7 +25,7 @@ $("#submit").on("click", function(event) {
     $("#rate-display").text(end);
 
     // Clear sessionStorage
-    sessionStorage.clear();
+    // sessionStorage.clear();
 
     // Store all content into sessionStorage
     sessionStorage.setItem("employee-name", name);
