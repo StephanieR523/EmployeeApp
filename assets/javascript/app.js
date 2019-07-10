@@ -27,7 +27,7 @@ $("#submit").on("click", function(event) {
 
 
     // Clear sessionStorage
-    sessionStorage.clear();
+    // sessionStorage.clear();
 
     // Store all content into sessionStorage
 

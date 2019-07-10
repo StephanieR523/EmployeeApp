@@ -28,11 +28,11 @@
     event.preventDefault();
 
     // Grabbed values from text boxes
-    name = $("#employee-name").val().trim();
-    role = $("#role").val().trim();
-    start = $("#start-year").val().trim();
-    end = $("#end-year").val().trim();
-    rate = $("#rate").val().trim();
+    var name = $("#employee-name").val().trim();
+    var role = $("#role").val().trim();
+    var start = $("#start-year").val().trim();
+    var end = $("#end-year").val().trim();
+    var rate = $("#rate").val().trim();
 
     // Code for handling the push
     database.ref().push({
