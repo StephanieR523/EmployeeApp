@@ -74,8 +74,14 @@
 
               <!-- Here we capture the End Year Parameter -->
               <div class="form-group">
-                <label for="end-year">Monthly Rate:</label>
+                <label for="end-year">Termination:</label>
                 <input type="text" class="form-control" id="end-year">
+              </div>
+
+              <!-- Here we capture the End Year Parameter -->
+              <div class="form-group">
+                <label for="rate">Monthly Rate:</label>
+                <input type="text" class="form-control" id="rate">
               </div>
 
               <!-- Here we have our final submit button -->
@@ -107,7 +113,8 @@
                     <th id="employee-name-display" scope="employee-name">Name</th>
                     <th id="role-display" scope="role">Role</th>
                     <th id="start-year-display" scope="start-year">Start Date:</th>
-                    <th id="end-year-display" scope="end-year">Monthly Rate:</th>
+                    <th id="end-year-display" scope="end-year">Termination:</th>
+                    <th id="rate-display" scope="rate">Monthly Rate:</th>
                   </tr>
                 </thead>
               </table>  
@@ -151,12 +158,13 @@
   </div>
 
   <!-- firebase link -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
   <!-- jQuery JS -->
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
   <!-- moment JS -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/af.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
   <!-- Code to the JavaScript File -->
   <script src="./assets/javascript/firebaseconfig.js"></script>
   <script src="./assets/javascript/app.js"></script>

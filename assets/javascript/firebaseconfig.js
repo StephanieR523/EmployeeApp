@@ -19,11 +19,12 @@
   // Initial Values
   var name = "";
   var role = "";
-  var start = 0;
+  var start = "";
   var end = "";
+  var rate = "";
 
   // Capture Button Click
-  $("#add-user").on("click", function(event) {
+  $("#submit").on("click", function(event) {
     event.preventDefault();
 
     // Grabbed values from text boxes
@@ -31,6 +32,7 @@
     role = $("#role").val().trim();
     start = $("#start-year").val().trim();
     end = $("#end-year").val().trim();
+    rate = $("#rate").val().trim();
 
     // Code for handling the push
     database.ref().push({
@@ -38,6 +40,7 @@
       role: role,
       start: start,
       end: end,
+      rate: rate,
       dateAdded: firebase.database.ServerValue.TIMESTAMP
     });
 
@@ -53,12 +56,14 @@
     console.log(sv.role);
     console.log(sv.start);
     console.log(sv.end);
+    console.log(sv.rate);
 
     // Change the HTML to reflect
     $("#name-display").text(sv.name);
-    $("#email-display").text(sv.role);
-    $("#age-display").text(sv.start);
-    $("#comment-display").text(sv.end);
+    $("#role-display").text(sv.role);
+    $("#start-year-display").text(sv.start);
+    $("#end-year-display").text(sv.end);
+    $("#rate-display").text(sv.rate);
 
     // Handle the errors
   }, function(errorObject) {
